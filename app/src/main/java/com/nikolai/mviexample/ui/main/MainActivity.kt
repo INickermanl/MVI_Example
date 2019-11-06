@@ -1,9 +1,9 @@
-package com.codingwithmitch.mviexample.ui.main
+package com.nikolai.mviexample.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
-import com.codingwithmitch.mviexample.R
+import com.nikolai.mviexample.R
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 		showMainFragment()
 	}
 
-	fun showMainFragment() {
+	private fun showMainFragment() {
 		supportFragmentManager.beginTransaction()
 				.replace(R.id.fragment_container, MainFragment(), "MainFragment")
 				.commit()

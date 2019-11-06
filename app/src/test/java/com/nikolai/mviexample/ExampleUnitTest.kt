@@ -1,4 +1,4 @@
-package com.codingwithmitch.mviexample
+package com.nikolai.mviexample
 
 import org.junit.Test
 
