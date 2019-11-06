@@ -22,14 +22,16 @@ class MainActivity : AppCompatActivity(), DataStateListener {
 			// loading
 			showProgressVar(it.loading)
 			// error message
-			it.errorMessage?.let { errorMessage ->
-				showToast(errorMessage)
+			it.errorMessage?.let { event ->
+				event.getContentIfNotHandled()?.let { errorMessage ->
+					showToast(errorMessage)
+				}
 			}
 		}
 	}
 
-	fun showProgressVar(isVissible: Boolean) {
-		if (isVissible) {
+	fun showProgressVar(isVisible: Boolean) {
+		if (isVisible) {
 			progress_bar.visibility = View.VISIBLE
 		} else {
 			progress_bar.visibility = View.GONE
