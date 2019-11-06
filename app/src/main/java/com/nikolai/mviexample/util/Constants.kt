@@ -1,0 +1,1 @@
+package com.nikolai.mviexample.utilclass Constants {	companion object{		val TESTING_NETWORK_DALAY  = 1000L	}}
