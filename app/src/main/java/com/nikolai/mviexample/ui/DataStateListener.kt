@@ -1,0 +1,1 @@
+package com.nikolai.mviexample.uiimport com.nikolai.mviexample.util.DataStateinterface DataStateListener {	fun onDataStateChanged(dataState: DataState<*>?)}
